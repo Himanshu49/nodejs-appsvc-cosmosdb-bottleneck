@@ -1,17 +1,8 @@
-testName: demo-podcast-vnet
-testPlan: NikitaPodcastTest.jmx
-description: ''
-engineInstances: 5
-subnetId: /subscriptions/7c71b563-0dc0-4bc0-bcf6-06f8f0516c7a/resourceGroups/podcastrg/providers/Microsoft.Network/virtualNetworks/nikita-podcast-vnet/subnets/default
-splitAllCSVs: True
-configurationFiles:
-- Shows.csv
+displayName: TestingVNetCustomDNS
+testPlan: TestingVnetCustomDNS.jmx
+description: Bug bash
+engineInstances: 15
+testId: a2a5cfcb-52fa-4e99-b93f-dc3e9c5c450d
+subnetId: /subscriptions/7c71b563-0dc0-4bc0-bcf6-06f8f0516c7a/resourceGroups/vnetinjectioncustomdns/providers/Microsoft.Network/virtualNetworks/customdnsvnet/subnets/default
+splitAllCSVs: False
 failureCriteria: []
-properties:
-  userPropertyFile: load.properties
-certificates:
-  - name: podcastcert
-    value: https://demo-podcast-akv.vault.azure.net/certificates/podcastcert
-env:
-  - name: webapp
-    value: nikita-podcastwebapp.azurewebsites.net
