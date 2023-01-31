@@ -1,7 +1,7 @@
 displayName: TestingVNetCustomDNS
 testPlan: TestingVnetCustomDNS.jmx
 description: Bug bash Github Actions testing
-engineInstances: 20
+engineInstances: 45
 testId: a2a5cfcb-52fa-4e99-b93f-dc3e9c5c450d15
 subnetId: /subscriptions/7c71b563-0dc0-4bc0-bcf6-06f8f0516c7a/resourceGroups/vnetinjectioncustomdns/providers/Microsoft.Network/virtualNetworks/customdnsvnet/subnets/default
 splitAllCSVs: False
